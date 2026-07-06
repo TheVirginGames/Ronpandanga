@@ -141,32 +141,40 @@ p {
   padding: 0;
   white-space: nowrap;
   vertical-align: middle;
+  font-size: 0;
 }
 
 .nav-list li {
-  display: inline;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .nav-link {
-  display: inline-block;
+  display: block;
   padding: 6px 14px;
   font-size: 12px;
   font-weight: bold;
   color: #000;
   text-decoration: none;
-  border-right: 1px solid #a0a0a0;
+  border-left: 1px solid #a0a0a0;
   background: #d4d0c8;
+}
+
+.nav-list li:first-child .nav-link {
+  border-left: none;
 }
 
 .nav-link:hover {
   background: #e8e4dc;
   color: #000;
   text-decoration: none;
+  border-left-color: #e8e4dc;
 }
 
 .nav-link.active {
   background: #fff;
   color: #000;
+  border-left-color: #fff;
   border-bottom: 2px solid #fff;
   margin-bottom: -2px;
   position: relative;
