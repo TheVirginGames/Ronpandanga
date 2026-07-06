@@ -149,6 +149,10 @@ p {
   vertical-align: top;
 }
 
+.nav-list li + li {
+  margin-left: -1px;
+}
+
 .nav-link {
   display: block;
   padding: 6px 14px;
@@ -169,6 +173,8 @@ p {
   color: #000;
   text-decoration: none;
   border-left-color: #e8e4dc;
+  position: relative;
+  z-index: 2;
 }
 
 .nav-link.active {
@@ -178,7 +184,7 @@ p {
   border-bottom: 2px solid #fff;
   margin-bottom: -2px;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .nav-login {
